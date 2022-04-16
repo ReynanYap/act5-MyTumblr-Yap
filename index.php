@@ -76,10 +76,9 @@ if(isset($_REQUEST['login_button']) === true){
 						  else if (isset($_REQUEST['loginfirst']) === true){
 							echo "<div class='alert alert-info' role='alert'> Please login first </div>";
 						} 
-						else if (isset($_SESSION['ses_username']) === true){
-							echo "<div class='alert alert-warning' role='alert'> You still logged in. Please <a href='account.php> click here <a> to proceed... </div>";
+						  else if (isset($_SESSION['ses_username']) === true){
+							echo "<div class='alert alert-warning' role='alert'> You still logged in. Please <a href='account.php'> click here to proceed...<a/>  </div>";
 						} 
-
 						  ?>
 		      			<input type="text" class="form-control rounded-left" placeholder="Username" name="form_username" required>
 		      		</div>
